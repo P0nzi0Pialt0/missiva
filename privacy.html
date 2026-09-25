@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Missiva: norme sulla privacy</title>
+<style>
+  :root { --bg: #f3f3f3; --fg: #1b1b1b; --muted: #5d5d5d; --accent: #c45500; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #202020; --fg: #f3f3f3; --muted: #b5b5b5; --accent: #f0a060; } }
+  body { font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--fg);
+         margin: 0; padding: 48px 16px; line-height: 1.55; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 8px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 28px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Norme sulla privacy</h1>
+  <p class="muted">Missiva, client di posta per Windows. Ultimo aggiornamento: 25 settembre 2026.</p>
+
+  <h2>In breve</h2>
+  <p>Missiva funziona solo sul tuo computer. Non raccoglie, non invia e non vende dati a nessuno: non esistono server
+     di Missiva.</p>
+
+  <h2>Quali dati usa</h2>
+  <ul>
+    <li><strong>Posta.</strong> Con la tua autorizzazione, Missiva si collega al tuo account Google (Gmail) o Microsoft
+        per mostrarti i messaggi, organizzarli nelle cartelle e inviare quelli che scrivi. Lo fa solo quando lo usi,
+        e solo per queste funzioni.</li>
+    <li><strong>Indirizzo email e nome.</strong> Servono a riconoscere l'account e a firmare come mittente i messaggi
+        che invii.</li>
+    <li><strong>Token di accesso.</strong> Al posto della password, Missiva conserva un token fornito da Google o
+        Microsoft, cifrato con la protezione dati di Windows e leggibile solo dal tuo utente di Windows.</li>
+  </ul>
+
+  <h2>Dove restano i dati</h2>
+  <p>Impostazioni e token restano nella cartella di Missiva sul tuo PC (<code>%LOCALAPPDATA%\Missiva</code>). I
+     messaggi restano sul server del tuo fornitore di posta; Missiva ne tiene copie temporanee solo per mostrarli e
+     cancella gli allegati aperti quando si chiude. Nessun dato viene trasmesso a terzi.</p>
+
+  <h2>Dati delle API di Google</h2>
+  <p>L'uso e il trasferimento ad altre app delle informazioni ricevute dalle API di Google rispetteranno le
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Norme relative ai dati utente dei
+     servizi API di Google</a>, inclusi i requisiti di utilizzo limitato. I dati di Gmail non vengono usati per
+     pubblicità, non vengono letti da persone e non servono ad addestrare modelli di intelligenza artificiale.</p>
+
+  <h2>Revocare l'accesso</h2>
+  <p>Rimuovendo un account da Missiva, il token viene cancellato; per gli account Google viene revocata anche
+     l'autorizzazione. Puoi revocarla in qualsiasi momento da <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> per
+     Google, o da <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> per Microsoft.</p>
+
+  <h2>Contatti</h2>
+  <p>Per domande su queste norme apri una segnalazione su
+     <a href="https://github.com/P0nzi0Pialt0/missiva/issues">github.com/P0nzi0Pialt0/missiva</a>.</p>
+
+  <p><a href="index.html">Torna a Missiva</a></p>
+</main>
+</body>
+</html>
